@@ -1,0 +1,11 @@
+.mb__20{
+    margin-bottom: 20px;
+}
+.mb__20-md{
+    margin-bottom: 0px;
+}
+@media screen and (max-width:767px){
+    .mb__20-md{
+        margin-bottom: 20px;
+    }
+}
