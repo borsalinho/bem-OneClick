@@ -121,22 +121,16 @@ block('header-OC')(
                                 },
                                 {
                                     elem:'profile',
-                                    content:[
-                                        {
-                                            elem:'profile-img',
-                                            tag:'img',
-                                            attrs:{
-                                                src:'/desktop.blocks/header-OC/header-OC-user.png'
-                                            }
+                                    content:{
+                                        block: 'dropdown',
+                                        mods: {
+                                            switcher: 'link',
+                                            theme: 'islands',
+                                            size: 'm'
                                         },
-                                        {
-                                            elem:'profile-dots',
-                                            tag:'img',
-                                            attrs:{
-                                                src:'/desktop.blocks/header-OC/header-OC-dots.png'
-                                            }
-                                        },
-                                        {
+                                        switcher: '',
+                                        popup: {
+                                            block:'header-OC',
                                             elem:'drop-list',
                                             content:[
                                                 {   
@@ -239,7 +233,8 @@ block('header-OC')(
                                                 },
                                             ]
                                         }
-                                    ]
+                                        
+                                    }
                                 }
                             ]
                             

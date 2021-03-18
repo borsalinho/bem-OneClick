@@ -82,9 +82,18 @@
     border-radius: 12px;
     width: 56px;
     height: 36px;
-    display: inline-block;
-    padding: 6px 8px;
+    display: flex;
     position: relative;
+}
+.header-OC__profile span{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 6px 8px;
+    background: url('/desktop.blocks/header-OC/header-OC-user.png'),
+                url('/desktop.blocks/header-OC/header-OC-dots.png');
+    background-repeat: no-repeat;
+    background-position: 7px center, 32px center;
 }
 .header-OC__profile-img{
     margin-right: 4px;
@@ -111,8 +120,8 @@
     box-shadow: 0px 2px 4px rgba(171, 171, 171, 0.2), 0px 4px 28px rgba(171, 171, 171, 0.14);
     border-radius: 12px;
     width: 205px;
-    right: 0;
-    top: 50px;
+    right: -55px;
+    top: 10px;
     padding: 20px;
 }
 .header-OC__drop-list-item:not(:last-child){
