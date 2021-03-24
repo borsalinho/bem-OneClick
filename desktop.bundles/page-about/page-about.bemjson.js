@@ -1,5 +1,6 @@
 module.exports = {
-    block: 'page-about',
+    block: 'page',
+    mix:{ block:'page-about' },
     title: 'О платформе',
     favicon: '/favicon.ico',
     head: [
@@ -19,8 +20,6 @@ module.exports = {
         },
         {
             block:'footer-OC',
-            tag:'footer',
-            content:'тут будет футер'
         }
     ]
 };

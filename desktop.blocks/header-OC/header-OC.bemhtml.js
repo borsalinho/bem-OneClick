@@ -71,6 +71,9 @@ block('header-OC')(
                                     {   
                                         elem:'menu-list-item',
                                         tag:'li',
+                                        mix:[
+                                            {elem:'button-services',}
+                                        ],
                                         content:{
                                             tag:'a',
                                             content:'Сервисы'
@@ -79,7 +82,6 @@ block('header-OC')(
                                     {   
                                         elem:'menu-list-item',
                                         mix:[
-                                            
                                             {elem:'pulsar-button'}
                                         ],
                                         tag:'li',
@@ -125,8 +127,7 @@ block('header-OC')(
                                         block: 'dropdown',
                                         mods: {
                                             switcher: 'link',
-                                            theme: 'islands',
-                                            size: 'm'
+                                            theme: 'islands'
                                         },
                                         switcher: '',
                                         popup: {
@@ -240,6 +241,78 @@ block('header-OC')(
                             
                         }
                     ]
+                    },
+                    {
+                        elem:'services',
+                        content:[
+                            {
+                                block:'container',
+                                content:[
+                                    {
+                                        block:'header-OC',
+                                        elem:'slider',
+                                        content:[
+                                            {
+                                                elem:'slider-item',
+                                                content:[
+                                                    {   content:
+                                                        'сервис 1'
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                elem:'slider-item',
+                                                content:[
+                                                    {   content:
+                                                        'сервис 1'
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                elem:'slider-item',
+                                                content:[
+                                                    {   content:
+                                                        'сервис 1'
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                elem:'slider-item',
+                                                content:[
+                                                    {   content:
+                                                        'сервис 1'
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                elem:'slider-item',
+                                                content:[
+                                                    {   content:
+                                                        'сервис 1'
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                elem:'slider-item',
+                                                content:[
+                                                    {   content:
+                                                        'сервис 1'
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                elem:'slider-item',
+                                                content:[
+                                                    {   content:
+                                                        'сервис 1'
+                                                    }
+                                                ]
+                                            },
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     }
                     
                 ];
