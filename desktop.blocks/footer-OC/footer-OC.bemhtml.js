@@ -219,9 +219,12 @@ block('footer-OC')(
                                                 block:'footer-OC',
                                                 elem:'elem',
                                                 content:{
-                                                    block:'link-OC',
+                                                    tag:'button',
                                                     attrs:{
-                                                        href:'#'
+                                                        type:'button',
+                                                        'data-toggle':'modal',
+                                                        'data-target':'.bd-example-modal-lg',
+                                                        
                                                     },
                                                     content:'Политика конфиденциальности'
                                                 }
@@ -242,7 +245,15 @@ block('footer-OC')(
                                 ]
                             },
                         ]
-                    }
+                    },
+                    {
+                        block:'privacy-policy'
+                    },
+                    {
+                        block:'scripts'
+                    },
+                    
+                    
                     
                 ];
         }),

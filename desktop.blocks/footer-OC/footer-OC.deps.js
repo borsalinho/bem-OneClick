@@ -3,6 +3,8 @@
         'logo-OC',
         'link-OC',
         'logo-messangers-OC',
-        'mb'
+        'mb',
+        'scripts',
+        'privacy-policy'
     ]
 })

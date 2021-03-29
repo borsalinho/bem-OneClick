@@ -7,8 +7,6 @@ module.exports = {
         { elem: 'css', url: 'page-main.min.css' },
     ],
     scripts: [{ elem: 'js', url: 'page-main.min.js' }],
-
-
     content: [
         {
             block:'header-OC',
