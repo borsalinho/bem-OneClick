@@ -1,48 +1,33 @@
 block('footer-OC')(
     tag()('footer'),
-    mix()
-        (
-            
-        ),
     
         content()(function() {
                 return [
                     {
-                        block:'container',
+                        cls:'container',
                         content:[
                             {
-                                block:'row',
+                                cls:'row',
                                 content:[
                                     {
-                                        block:'col-xl-2',
-                                        mix:[
-                                            { block:'col-md-3' },
-                                            { block:'mb', elem:'20-md'}
-                                            
-                                        ],
+                                        cls:'col-xl-2 col-md-3',
+                                        block:'mb', elem:'20-md',
                                         content:[
                                             {
-                                                block:'row',
+                                                cls:'row',
                                                 content:[
                                                     {
-                                                        block:'col-md-12',
-                                                        mix:[
-                                                            { block:'col-5'},
-                                                            { block:'mb', elem:'20'}
-                                                        ],
+                                                        cls:'col-md-12 col-5',
+                                                        block:'mb',
+                                                        elem:'20',
                                                         content:{
                                                             block:'logo-OC'
                                                         }
                                                     },
                                                     {
-                                                        block:'col-md-12',
-                                                        mix:[
-                                                            { block:'col-7'},
-                                                            { block:'mb', elem:'20'},
-                                                            { block:'justify-content-end'},
-                                                            { block:'justify-content-md-start'},
-                                                            { block:'d-flex'},
-                                                        ],
+                                                        cls:'col-md-12 col-7 justify-content-end justify-content-md-start d-flex',
+                                                        block:'mb',
+                                                        elem:'20',
                                                         content:{
                                                             block:'logo-messangers-OC',
                                                             content:[
@@ -129,11 +114,9 @@ block('footer-OC')(
                                         
                                     },
                                     {
-                                        block:'col-xl-5',
-                                        mix:[
-                                            { block:'col-md-5' },
-                                            { block:'mb', elem:'20-md'}
-                                        ],
+                                        cls:'col-xl-5 col-md-5',
+                                        block:'mb', 
+                                        elem:'20-md',
                                         content:[
                                             {   
                                                 block:'footer-OC',
@@ -190,8 +173,7 @@ block('footer-OC')(
                                         ]
                                     },
                                     {
-                                        block:'col-xl-5',
-                                        mix:{ block:'col-md-4' },
+                                        cls:'col-xl-5 col-md-4',
                                         content:[
                                             {   
                                                 block:'footer-OC',
@@ -215,20 +197,36 @@ block('footer-OC')(
                                                     content:'Технопарк «Якутия»'
                                                 }
                                             },
+                                            
                                             {   
                                                 block:'footer-OC',
                                                 elem:'elem',
                                                 content:{
-                                                    tag:'button',
-                                                    attrs:{
-                                                        type:'button',
-                                                        'data-toggle':'modal',
-                                                        'data-target':'.bd-example-modal-lg',
-                                                        
-                                                    },
-                                                    content:'Политика конфиденциальности'
+                                                    block: 'modal-open',
+                                                    js: true,
+                                                    content: [
+                                                        {
+                                                            block: 'link',
+                                                            mods: {
+                                                                pseudo: true,
+                                                                theme: 'islands'
+                                                            },
+                                                            content: 'Политика конфиденциальности'
+                                                        },
+                                                        {
+                                                            block: 'modal',
+                                                            mods: {
+                                                                autoclosable: true,
+                                                                theme: 'islands'
+                                                            },
+                                                            content: {
+                                                                block:'privacy-policy-OC'
+                                                            }
+                                                        }
+                                                    ]
                                                 }
                                             },
+                                           
                                             {   
                                                 block:'footer-OC',
                                                 elem:'elem',
@@ -246,14 +244,6 @@ block('footer-OC')(
                             },
                         ]
                     },
-                    {
-                        block:'privacy-policy'
-                    },
-                    {
-                        block:'scripts'
-                    },
-                    
-                    
                     
                 ];
         }),

@@ -4,7 +4,16 @@
         'link-OC',
         'logo-messangers-OC',
         'mb',
-        'scripts',
-        'privacy-policy'
+        'privacy-policy',
+        'modal-open',
+        'privacy-policy-OC',
+        {
+            block: 'modal',
+            mods: {
+                autoclosable: true,
+                theme: 'islands'
+            }
+        },
+        'scripts'
     ]
 })
