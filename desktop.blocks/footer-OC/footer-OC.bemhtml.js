@@ -231,11 +231,28 @@ block('footer-OC')(
                                                 block:'footer-OC',
                                                 elem:'elem',
                                                 content:{
-                                                    block:'link-OC',
-                                                    attrs:{
-                                                        href:'#'
-                                                    },
-                                                    content:'Лицензионное соглашение'
+                                                    block: 'modal-open',
+                                                    js: true,
+                                                    content: [
+                                                        {
+                                                            block: 'link',
+                                                            mods: {
+                                                                pseudo: true,
+                                                                theme: 'islands'
+                                                            },
+                                                            content: 'Лицензионное соглашение'
+                                                        },
+                                                        {
+                                                            block: 'modal',
+                                                            mods: {
+                                                                autoclosable: true,
+                                                                theme: 'islands'
+                                                            },
+                                                            content: {
+                                                                block:'license-agreement-OC'
+                                                            }
+                                                        }
+                                                    ]
                                                 }
                                             }
                                         ]
@@ -244,7 +261,9 @@ block('footer-OC')(
                             },
                         ]
                     },
-                    
+                    {
+                        block:'scripts'
+                    }
                 ];
         }),
 );  

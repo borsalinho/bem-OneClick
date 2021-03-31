@@ -5,6 +5,7 @@
         'logo-messangers-OC',
         'mb',
         'privacy-policy',
+        'license-agreement-OC',
         'modal-open',
         'privacy-policy-OC',
         {

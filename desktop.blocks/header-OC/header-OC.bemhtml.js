@@ -11,11 +11,8 @@ block('header-OC')(
         content()(function() {
                 return [
                     {
-                        block:'container',
-                    mix:[
-                        {block:'d-flex'},
-                        {block:'align-items-center'}
-                    ],
+                        cls:'container d-flex align-items-center',
+                    
                     content:[
                         {   
                             block:'header-OC',
@@ -228,9 +225,7 @@ block('header-OC')(
                                                                 }
                                                             ]
                                                         }
-                                                        
                                                     ]
-                                                    
                                                 },
                                             ]
                                         }
@@ -246,10 +241,9 @@ block('header-OC')(
                         elem:'services',
                         content:[
                             {
-                                block:'container',
+                                cls:'container',
                                 content:[
                                     {
-                                        block:'header-OC',
                                         elem:'slider',
                                         content:[
                                             {

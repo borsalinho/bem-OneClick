@@ -9,6 +9,7 @@
                 theme: 'islands',
                 size: 'm'
             }
-        }
+        },
+        
     ]
 })
