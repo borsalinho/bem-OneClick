@@ -1,4 +1,5 @@
 node_modules/
+!/page
 .DS_Store
 .idea/
 *.iml
