@@ -14,4 +14,4 @@ modules.define('modal-open', ['i-bem-dom', 'modal', 'link'], function(provide, b
         }
     }));
     
-    });
+});

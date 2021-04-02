@@ -155,6 +155,7 @@
     width: 100%;
     height: 80px;
     bottom: -80px;
+    display: none;
 }
 
 .header-OC__slider{
